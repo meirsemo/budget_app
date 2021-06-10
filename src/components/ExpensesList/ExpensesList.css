@@ -1,0 +1,18 @@
+.expenses {
+    /* float: left; */
+    padding: 10px;
+    width: 475px;
+    font-family: 'Comic Neue';
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.expenses__title { 
+    color: #FF5049;
+    font-weight: 600;
+    font-size: 25px;
+ }
+
+.expenses__list {
+    margin-top: 5px;
+}

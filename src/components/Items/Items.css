@@ -1,0 +1,77 @@
+.item {
+    padding: 13px;
+    /* border-radius: 15px; */
+    background-color: rgba(218, 194, 178, 0.514);
+    /* border-top: 1px solid black; */
+    border-bottom: 0.5px solid #c8b9b9;
+    /* margin: 2px; */
+}
+
+.item:first-child { border-top: 1px solid #c8b9b9; }
+.item:nth-child(even) { background-color: #ffffff; }
+
+.item__description {
+    float: left;
+}
+
+.item__value {
+    float: left;
+    transition: transform 0.3s;
+}
+
+.item__percentage-inc,
+.item__percentage {
+    float: left;
+    margin-left: 20px;
+    transition: transform 0.3s;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #FFDAD9;
+    padding: 3px;
+    border-radius: 3px;
+    width: 65px;
+    text-align: center;
+    letter-spacing: .1rem;
+}
+
+.item__percentage-inc{
+    background-color: #ffdad900;
+}
+
+.income .item__value,
+.income .item__delete--btn {
+    color: #59b300;
+}
+
+.expenses .item__value,
+.expenses .item__percentage,
+.expenses .item__delete--btn {
+    color: #FF5049;
+}
+
+.item__delete {
+    float: left;
+}
+
+.item__delete--btn {
+    font-size: 22px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+    display: none;
+}
+
+.ion-ios-trash-outline {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.item__delete--btn:focus { outline: none; }
+.item__delete--btn:active { transform: translateY(2px); }/*מקטין את האיקון כשלוחצים*/
+
+.item:hover .item__delete--btn { display: block; }
+.item:hover .item__value { transform: translateX(-20px); }
+.item:hover .item__percentage { transform: translateX(-20px); }

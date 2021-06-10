@@ -1,0 +1,77 @@
+
+ .budget__title {
+    font-size: 1.4rem;
+    text-align: center;
+    font-weight: 50px;
+    color: black;
+}
+
+.budget__title--month {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+}
+
+.budget__value {
+    border-radius: 5px;
+    font-weight: bolder;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 13px;
+    letter-spacing: 2px;
+    color: black;
+}
+.minus {
+    background-color: rgba(240, 23, 23, 0.26);
+}
+.plus {
+    background-color: rgba(30, 240, 23, 0.2);
+}
+.budget__income,
+.budget__expenses {
+    color: white;
+    padding: 10px;
+    /* text-transform: uppercase; */
+}
+
+.budget__income {
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: #59b300;
+}
+
+.budget__expenses {
+    border-radius: 10px;
+    background-color: #FF5049;
+}
+
+.budget__income--text,
+.budget__expenses--text {
+    float: left;
+    margin-top: 2px;
+}
+
+.budget__income--value,
+.budget__expenses--value {
+    letter-spacing: 1px;
+    padding-left: 10px;
+    float: left;
+}
+
+.budget__income--percentage,
+.budget__expenses--percentage {
+    float: left;
+    width: 46px;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 3px 1px;
+    margin-left: 10px;
+}
+
+.budget__expenses--percentage {
+    background-color: rgba(255, 255, 255, 0.2);
+    letter-spacing: .2rem;
+    border-radius: 3px;
+    width: 70px;
+}

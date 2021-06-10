@@ -1,0 +1,16 @@
+.card {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    font-family: 'Comic Neue';
+    font-size: 20px;
+    background: #fff5ee;
+    background: linear-gradient(56deg, #aa4b6b 0%, #6b6b83 43%, #3b8d99 90%);
+    width: 100%;
+    max-width: 400px; 
+    /*ruin the flex prop*/
+    height: 100%;
+    max-height: 300px;
+    border-radius: 50% 20% / 10% 40%;
+    box-shadow: 5px 10px 10px 5px rgb(7, 7, 7);
+}

@@ -1,0 +1,21 @@
+.cardT {
+    /* display: flex; 
+    justify-content: center; 
+    align-items: center;  */
+    font-family: 'Comic Neue';
+    font-size: 20px;
+    width: 100%;
+    max-width: 1200px; /*ruin the flex prop*/
+    height: 100%;
+    max-height: 1000px;
+    background-color: blanchedalmond;
+    margin: 0 auto; /*center back the item*/
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px 10px rgba(0,0,0,0.16);
+    border: 1px solid black;
+      /* position: absolute;
+    top: 200px;
+    left: 100px;
+    right: 100px; */
+}

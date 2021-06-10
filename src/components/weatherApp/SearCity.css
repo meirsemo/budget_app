@@ -1,0 +1,16 @@
+.sear-city {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.details {
+    padding: 8px 20px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.fa-window-close {
+    font-size: 100px;
+    margin-left: 20px;
+}

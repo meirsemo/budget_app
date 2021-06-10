@@ -1,0 +1,142 @@
+.NavbarItems {
+  font-family: 'Comic Neue';
+  /* background: linear-gradient(56deg, rgba(2,0,36,1) 0%, #1565C0 43%, #b92b27 90%); */
+  background: linear-gradient(56deg, #aa4b6b 0%, #6b6b83 43%, #3b8d99 90%);
+  /* background: linear-gradient(to top, #aa4b6b, #6b6b83, #3b8d99); */
+  height: 80px;
+  display: flex; /*put the html elements side by side*/
+  justify-content: center; /*center the items width*/
+  align-items: center; /*center the items height*/
+  font-size: 1.2rem;/*relativ to the root element*/
+}
+/*Tip: The em and rem units are practical in creating perfectly scalable layout!
+* Viewport = the browser window size. If the viewport is 50cm wide, 1vw = 0.5cm.*/
+.navbar-logo {
+  color: #fff;
+  justify-self: start;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.fa-balance-scale {
+  margin-left: 0.5rem;
+  font-size: 1.6rem;
+  color: rgb(0 20 166 / 68%);
+}
+
+.nav-menu {
+  display: grid;
+  grid-template-columns: repeat(5, auto); /*split the items in to a columns*/
+  grid-gap: 10px;/*spaceing between*/
+  list-style: none; /*remove the default dots*/
+  text-align: center;
+  width: 70vw;
+  justify-content: end;
+  margin-right: 2rem;
+}
+
+.nav-links {
+  color: white;
+  text-decoration: none; /*remove the defaule underline*/
+  padding: 0.5rem 1rem;
+}
+
+.nav-links:hover {
+  background-color: #6d76f7;
+  border-radius: 4px;
+  transition: all 0.2s ease-out;
+}
+
+.fa-bars {
+  color: #fff;
+}
+
+.nav-links-mobile {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+}
+
+@media screen and (max-width: 960px) {
+  .NavBarItems {
+    position: relative;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 80px;
+    left: -100%;/*hide the element*/
+    opacity: 1;
+    transition: all 0.5s ease-out;
+  }
+
+  .nav-menu.active {
+    background: linear-gradient(56deg, rgba(2,0,36,1) 0%, #1565C0 43%, #b92b27 90%);
+    left: 0;
+    opacity: 1; /*שקיפות של אלמנט */
+    transition: all 0.5s ease-out;
+    z-index: 1;/*it will be placed infornt the elments*/
+  }
+
+  .nav-links {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+  }
+
+  .nav-links:hover {
+    background-color: #7577fa;
+    border-radius: 10px;  
+  }
+
+  .navbar-logo {
+    position: absolute;
+    left: 0; /*put the element on left side*/
+    top: 0;
+    transform: translate(25%, 50%);
+  }
+
+  .menu-icon {
+    display: block; /*showing the elemnt which was display none on the css*/
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  } 
+
+  .fa-times {
+    /*on the sidebar*/
+    color: #fff;
+    font-size: 2rem;
+  }
+
+  .nav-links-mobile {
+    display: block;
+    text-align: center;
+    padding: 1.5rem;
+    margin: 2rem auto;
+    border-radius: 10px;
+    width: 60%;
+    text-decoration: none;
+    color: #fff; 
+    font-size: 1.5rem;
+  }
+
+  .nav-links-mobile:hover {
+    background: #fff;
+    color: #6568f4;
+    transition: 250ms;
+  }
+
+  Button {
+    display: none;
+  }
+}
