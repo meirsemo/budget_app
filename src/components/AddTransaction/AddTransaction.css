@@ -16,8 +16,6 @@
     font-size: 20px;
     transition: border 0.3s;
     border-radius: 25px 0 0 25px;
-    /* background: #fff5ee; 
-    background-color: #fff;*/
     background-color: #5ab30088;
     color: #fff;
     border: none;
@@ -38,8 +36,6 @@
     border: none;
     background-color: #5ab30088;
     color: rgb(255, 255, 255);
-    /*color: inherit;
-    background-color: #fff5ee; */
 }
 
 .add__description { 

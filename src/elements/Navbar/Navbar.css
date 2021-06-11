@@ -1,8 +1,6 @@
 .NavbarItems {
   font-family: 'Comic Neue';
-  /* background: linear-gradient(56deg, rgba(2,0,36,1) 0%, #1565C0 43%, #b92b27 90%); */
   background: linear-gradient(56deg, #aa4b6b 0%, #6b6b83 43%, #3b8d99 90%);
-  /* background: linear-gradient(to top, #aa4b6b, #6b6b83, #3b8d99); */
   height: 80px;
   display: flex; /*put the html elements side by side*/
   justify-content: center; /*center the items width*/

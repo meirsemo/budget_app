@@ -16,7 +16,6 @@ body {
     position: relative;
     font-weight: 400;
     background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
-    /* background: linear-gradient(56deg, rgba(2,0,36,1) 0%, #1565C0 43%, #b92b27 90%);     */
 }
 
 main {
@@ -59,7 +58,6 @@ main {
     height: 400px;
     margin: 60px auto;
     background: #ffffff;
-    /* background: #fff5ee; */
     border-radius: 15px;
     overflow-x: overlay;
 }

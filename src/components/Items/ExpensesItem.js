@@ -22,5 +22,3 @@ const ExpensesItem = ({id = 0, value = 0, description = ''}) => {
 }
 
 export default ExpensesItem;
-//<ion-icon name="trash-outline"></ion-icon>
-// <i className="ion-ios-close-outline"></i>

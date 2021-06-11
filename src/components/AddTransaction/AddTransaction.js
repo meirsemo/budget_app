@@ -1,5 +1,4 @@
 import React, { useContext, useState } from 'react';
-//import {v4 as uuidv4} from 'uuid';
 import { GlobalContext } from '../../context/GlobalState';
 import './AddTransaction.css';
 
@@ -15,7 +14,6 @@ const add = React.memo( () => {
         event.preventDefault();
         if(userDescription  && userValue ){
             addTransaction({
-                //id: uuidv4(),
                 description: userDescription, 
                 value: userValue * 1, 
                 type: selectValue});
@@ -61,4 +59,3 @@ const add = React.memo( () => {
 });
 
 export default add;
-// (selectValue === 'exp' ? ' red' : '')
